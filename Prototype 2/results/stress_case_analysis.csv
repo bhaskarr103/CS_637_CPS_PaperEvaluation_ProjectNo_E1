@@ -1,0 +1,7 @@
+Trajectory_ID,Case_Category,Initial_Gap_m,Closing_Speed_ms,Min_Stopping_Dist_Req_m,Min_Gap_Baseline_m,Min_Gap_CBF_m,Infeasible_Samples,Intervention_Pct,Diagnosis
+6,Initially Overlapping / Physically Unrecoverable,0.0322646215739965,8.681444993950905,9.420935897874402,-22.488119161637023,-22.488119161637023,42,45.65217391304348,Initially overlapping/physically unrecoverable case; collision inevitable under modeled plant
+16,Actuator Saturation / Infeasibility,33.091797179688456,8.518629285489148,9.070880612949168,16.811476937592097,16.811476937592097,22,92.15686274509804,Temporary demand saturation (min u_CBF=-6.1 m/s²); smoothly resolved by rate-limited braking
+51,Actuator Saturation / Infeasibility,25.636285964109828,3.5131702945853434,1.5427956898446085,23.390695808726814,23.390695808726814,6,99.25133689839572,Temporary demand saturation (min u_CBF=-4.9 m/s²); smoothly resolved by rate-limited braking
+20,Close Following / Opening Delta V,0.8757416870338377,-1.7711798186800358,0.0,0.8757416870338377,0.8757416870338377,0,99.0803188228081,"Close initial gap (0.88m), but lead accelerating away; CBF gently guided spacing expansion"
+55,Forward Invariance Exemplar,119.56171553364712,-13.386558298889701,0.0,38.32732425068823,65.35558474659298,0,87.46518105849582,Strict empirical forward invariance maintained; h > 0 throughout full duration
+56,Forward Invariance Exemplar,118.65809559679828,-14.702189289559904,0.0,39.988866367926526,71.05550201367905,0,74.91638795986621,Strict empirical forward invariance maintained; h > 0 throughout full duration

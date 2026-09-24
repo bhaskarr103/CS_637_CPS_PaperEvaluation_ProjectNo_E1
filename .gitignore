@@ -4,15 +4,9 @@ __pycache__/
 *.pyc
 
 # Large datasets / generated data
-*.csv
 *.xlsx
 *.npy
 *.pkl
-
-# Generated results
-results/
-figures/
-paper_style_figures/
 
 # IDE / OS
 .vscode/

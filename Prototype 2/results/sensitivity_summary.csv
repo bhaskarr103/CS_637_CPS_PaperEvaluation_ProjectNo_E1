@@ -1,0 +1,5 @@
+T_min_s,Initially_Safe_Count,Initially_Safe_Pct,Intervention_Rate_Pct,Mean_Gap_m,Clean_Min_Gap_m,Mean_Speed_ms,Speed_Tracking_Error_ms,Infeasible_Samples,Recovery_Rate_01m_Pct,Collisions_All_61,Collisions_Valid_60
+1.0,21,34.4,19.19,46.58,0.88,27.22,1.0123,118,90.0,1,0
+1.5,13,21.3,92.93,54.23,0.88,27.14,1.0807,89,79.2,1,0
+2.0,9,14.8,94.54,65.49,0.88,27.03,1.2572,70,78.8,1,0
+2.5,8,13.1,95.6,76.7,0.88,26.92,1.4296,65,77.4,1,0

@@ -1,0 +1,2 @@
+Total_Rows,Total_Trajectories,Initially_Safe_Count,Initially_Unsafe_Count,Stress_Anomaly_Count,Dataset_Mean_Gap_m,Dataset_Min_Gap_m,Dataset_Mean_Speed_ms,Dataset_Pct_Samples_h_negative
+158018,61,9,52,1,37.248,0.0067,29.017,96.81
