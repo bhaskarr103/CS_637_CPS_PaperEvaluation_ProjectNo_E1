@@ -1,0 +1,21 @@
+﻿venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Large datasets / generated data
+*.csv
+*.xlsx
+*.npy
+*.pkl
+
+# Generated results
+results/
+figures/
+paper_style_figures/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
