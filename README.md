@@ -14,9 +14,9 @@ The work progresses from a classical ACC + CBF controller to a CBF-aware reinfor
 
 ## Demonstration Video
 
-This video combines the initial project demonstration with the autonomous car-following simulations developed for the CPS project, including the ACC + CBF controller and CBF-RL visualization.
+This video demonstrates the CPS project work developed across the autonomous car-following prototypes, including the ACC + Control Barrier Function (CBF) controller, Vicolungo trajectory-based evaluation, and the CBF-RL simulation and visualization.
 
-<video src="Videos/Prototype%20Initial.mp" controls width="100%"></video>
+https://github.com/user-attachments/assets/569dad05-da21-440c-97c7-576d933bfe9a
 
 ---
 
