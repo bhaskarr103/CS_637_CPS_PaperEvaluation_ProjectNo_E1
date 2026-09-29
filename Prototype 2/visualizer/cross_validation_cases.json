@@ -1,0 +1,1202 @@
+[
+  {
+    "input": {
+      "gap": 75.0,
+      "ego_speed": 25.0,
+      "lead_speed": 27.0,
+      "prev_acc": 0.0,
+      "desc": "Safe following, opening speed"
+    },
+    "py_cbf": {
+      "applied_acc": 0.15000000000000002,
+      "u_nom": 2.0,
+      "u_cbf": 1.5,
+      "u_raw": 1.5,
+      "u_sat": 1.5,
+      "h": 10.0,
+      "delta_v": 2.0,
+      "intervention": true,
+      "infeasible": false
+    },
+    "py_base": {
+      "applied_acc": 0.15000000000000002,
+      "u_nom": 2.0
+    }
+  },
+  {
+    "input": {
+      "gap": 30.0,
+      "ego_speed": 25.0,
+      "lead_speed": 25.0,
+      "prev_acc": 0.0,
+      "desc": "Close gap, same speed -> CBF intervention"
+    },
+    "py_cbf": {
+      "applied_acc": -0.15000000000000002,
+      "u_nom": -2.5,
+      "u_cbf": -1.75,
+      "u_raw": -2.5,
+      "u_sat": -2.5,
+      "h": -35.0,
+      "delta_v": 0.0,
+      "intervention": false,
+      "infeasible": false
+    },
+    "py_base": {
+      "applied_acc": -0.15000000000000002,
+      "u_nom": -2.5
+    }
+  },
+  {
+    "input": {
+      "gap": 2.0,
+      "ego_speed": 30.0,
+      "lead_speed": 15.0,
+      "prev_acc": 0.0,
+      "desc": "Emergency closing, tiny gap -> Infeasible"
+    },
+    "py_cbf": {
+      "applied_acc": -0.15000000000000002,
+      "u_nom": -4.0,
+      "u_cbf": -11.15,
+      "u_raw": -11.15,
+      "u_sat": -4.0,
+      "h": -73.0,
+      "delta_v": -15.0,
+      "intervention": true,
+      "infeasible": true
+    },
+    "py_base": {
+      "applied_acc": -0.15000000000000002,
+      "u_nom": -4.0
+    }
+  },
+  {
+    "input": {
+      "gap": 15.0,
+      "ego_speed": 20.0,
+      "lead_speed": 10.0,
+      "prev_acc": -1.0,
+      "desc": "Active braking with prior deceleration"
+    },
+    "py_cbf": {
+      "applied_acc": -1.15,
+      "u_nom": -4.0,
+      "u_cbf": -7.0,
+      "u_raw": -7.0,
+      "u_sat": -4.0,
+      "h": -40.0,
+      "delta_v": -10.0,
+      "intervention": true,
+      "infeasible": true
+    },
+    "py_base": {
+      "applied_acc": -1.15,
+      "u_nom": -4.0
+    }
+  },
+  {
+    "input": {
+      "gap": 120.0,
+      "ego_speed": 15.0,
+      "lead_speed": 30.0,
+      "prev_acc": 0.0,
+      "desc": "Large headway (Traj 55 style)"
+    },
+    "py_cbf": {
+      "applied_acc": 0.15000000000000002,
+      "u_nom": 2.0,
+      "u_cbf": 11.25,
+      "u_raw": 2.0,
+      "u_sat": 2.0,
+      "h": 75.0,
+      "delta_v": 15.0,
+      "intervention": false,
+      "infeasible": false
+    },
+    "py_base": {
+      "applied_acc": 0.15000000000000002,
+      "u_nom": 2.0
+    }
+  },
+  {
+    "input": {
+      "gap": 33.0,
+      "ego_speed": 27.5,
+      "lead_speed": 19.0,
+      "prev_acc": 0.0,
+      "desc": "Trajectory 16 initial condition"
+    },
+    "py_cbf": {
+      "applied_acc": -0.15000000000000002,
+      "u_nom": -4.0,
+      "u_cbf": -6.1,
+      "u_raw": -6.1,
+      "u_sat": -4.0,
+      "h": -37.0,
+      "delta_v": -8.5,
+      "intervention": true,
+      "infeasible": true
+    },
+    "py_base": {
+      "applied_acc": -0.15000000000000002,
+      "u_nom": -4.0
+    }
+  },
+  {
+    "input": {
+      "gap": 45.0,
+      "ego_speed": 32.0,
+      "lead_speed": 32.0,
+      "prev_acc": 1.5,
+      "desc": "High speed highway cruising at max acceleration"
+    },
+    "py_cbf": {
+      "applied_acc": 1.35,
+      "u_nom": -1.6,
+      "u_cbf": -1.7000000000000002,
+      "u_raw": -1.7000000000000002,
+      "u_sat": -1.7000000000000002,
+      "h": -34.0,
+      "delta_v": 0.0,
+      "intervention": true,
+      "infeasible": false
+    },
+    "py_base": {
+      "applied_acc": 1.35,
+      "u_nom": -1.6
+    }
+  },
+  {
+    "input": {
+      "gap": 10.0,
+      "ego_speed": 5.0,
+      "lead_speed": 0.0,
+      "prev_acc": -3.5,
+      "desc": "Low-speed standstill approach"
+    },
+    "py_cbf": {
+      "applied_acc": -3.65,
+      "u_nom": -4.0,
+      "u_cbf": -3.25,
+      "u_raw": -4.0,
+      "u_sat": -4.0,
+      "h": -15.0,
+      "delta_v": -5.0,
+      "intervention": false,
+      "infeasible": false
+    },
+    "py_base": {
+      "applied_acc": -3.65,
+      "u_nom": -4.0
+    }
+  },
+  {
+    "input": {
+      "gap": 5.0,
+      "ego_speed": 22.0,
+      "lead_speed": 22.0,
+      "prev_acc": 0.0,
+      "desc": "Severe gap breach at highway speed"
+    },
+    "py_cbf": {
+      "applied_acc": -0.15000000000000002,
+      "u_nom": -4.0,
+      "u_cbf": -2.7,
+      "u_raw": -4.0,
+      "u_sat": -4.0,
+      "h": -54.0,
+      "delta_v": 0.0,
+      "intervention": false,
+      "infeasible": false
+    },
+    "py_base": {
+      "applied_acc": -0.15000000000000002,
+      "u_nom": -4.0
+    }
+  },
+  {
+    "input": {
+      "gap": 60.0,
+      "ego_speed": 20.0,
+      "lead_speed": 20.0,
+      "prev_acc": 0.0,
+      "desc": "Exact equilibrium state"
+    },
+    "py_cbf": {
+      "applied_acc": 0.15000000000000002,
+      "u_nom": 2.0,
+      "u_cbf": 0.25,
+      "u_raw": 0.25,
+      "u_sat": 0.25,
+      "h": 5.0,
+      "delta_v": 0.0,
+      "intervention": true,
+      "infeasible": false
+    },
+    "py_base": {
+      "applied_acc": 0.15000000000000002,
+      "u_nom": 2.0
+    }
+  },
+  {
+    "input": {
+      "gap": 38.079,
+      "ego_speed": 33.521,
+      "lead_speed": 26.96,
+      "prev_acc": -0.408,
+      "desc": "Randomized State 1"
+    },
+    "py_cbf": {
+      "applied_acc": -0.558,
+      "u_nom": -4.0,
+      "u_cbf": -5.47865,
+      "u_raw": -5.47865,
+      "u_sat": -4.0,
+      "h": -43.963,
+      "delta_v": -6.561,
+      "intervention": true,
+      "infeasible": true
+    },
+    "py_base": {
+      "applied_acc": -0.558,
+      "u_nom": -4.0
+    }
+  },
+  {
+    "input": {
+      "gap": 16.446,
+      "ego_speed": 9.68,
+      "lead_speed": 6.743,
+      "prev_acc": 1.197,
+      "desc": "Randomized State 2"
+    },
+    "py_cbf": {
+      "applied_acc": 1.0470000000000002,
+      "u_nom": -2.9643999999999995,
+      "u_cbf": -2.3641999999999994,
+      "u_raw": -2.9643999999999995,
+      "u_sat": -2.9643999999999995,
+      "h": -17.913999999999998,
+      "delta_v": -2.9369999999999994,
+      "intervention": false,
+      "infeasible": false
+    },
+    "py_base": {
+      "applied_acc": 1.0470000000000002,
+      "u_nom": -2.9643999999999995
+    }
+  },
+  {
+    "input": {
+      "gap": 60.51,
+      "ego_speed": 26.242,
+      "lead_speed": 5.618,
+      "prev_acc": 1.819,
+      "desc": "Randomized State 3"
+    },
+    "py_cbf": {
+      "applied_acc": 1.669,
+      "u_nom": -4.0,
+      "u_cbf": -10.660700000000002,
+      "u_raw": -10.660700000000002,
+      "u_sat": -4.0,
+      "h": -6.974000000000011,
+      "delta_v": -20.624000000000002,
+      "intervention": true,
+      "infeasible": true
+    },
+    "py_base": {
+      "applied_acc": 1.669,
+      "u_nom": -4.0
+    }
+  },
+  {
+    "input": {
+      "gap": 83.412,
+      "ego_speed": 11.37,
+      "lead_speed": 10.455,
+      "prev_acc": -2.9,
+      "desc": "Randomized State 4"
+    },
+    "py_cbf": {
+      "applied_acc": -2.75,
+      "u_nom": 2.0,
+      "u_cbf": 1.8261000000000012,
+      "u_raw": 1.8261000000000012,
+      "u_sat": 1.8261000000000012,
+      "h": 45.67200000000001,
+      "delta_v": -0.9149999999999991,
+      "intervention": true,
+      "infeasible": false
+    },
+    "py_base": {
+      "applied_acc": -2.75,
+      "u_nom": 2.0
+    }
+  },
+  {
+    "input": {
+      "gap": 31.12,
+      "ego_speed": 20.743,
+      "lead_speed": 17.958,
+      "prev_acc": -2.253,
+      "desc": "Randomized State 5"
+    },
+    "py_cbf": {
+      "applied_acc": -2.403,
+      "u_nom": -3.2269,
+      "u_cbf": -2.6608,
+      "u_raw": -3.2269,
+      "u_sat": -3.2269,
+      "h": -25.365999999999996,
+      "delta_v": -2.785,
+      "intervention": false,
+      "infeasible": false
+    },
+    "py_base": {
+      "applied_acc": -2.403,
+      "u_nom": -3.2269
+    }
+  },
+  {
+    "input": {
+      "gap": 61.573,
+      "ego_speed": 9.185,
+      "lead_speed": 13.764,
+      "prev_acc": -1.802,
+      "desc": "Randomized State 6"
+    },
+    "py_cbf": {
+      "applied_acc": -1.6520000000000001,
+      "u_nom": 2.0,
+      "u_cbf": 3.699649999999999,
+      "u_raw": 2.0,
+      "u_sat": 2.0,
+      "h": 28.202999999999996,
+      "delta_v": 4.578999999999999,
+      "intervention": false,
+      "infeasible": false
+    },
+    "py_base": {
+      "applied_acc": -1.6520000000000001,
+      "u_nom": 2.0
+    }
+  },
+  {
+    "input": {
+      "gap": 46.151,
+      "ego_speed": 28.555,
+      "lead_speed": 10.99,
+      "prev_acc": -0.915,
+      "desc": "Randomized State 7"
+    },
+    "py_cbf": {
+      "applied_acc": -1.065,
+      "u_nom": -4.0,
+      "u_cbf": -10.080449999999999,
+      "u_raw": -10.080449999999999,
+      "u_sat": -4.0,
+      "h": -25.958999999999996,
+      "delta_v": -17.564999999999998,
+      "intervention": true,
+      "infeasible": true
+    },
+    "py_base": {
+      "applied_acc": -1.065,
+      "u_nom": -4.0
+    }
+  },
+  {
+    "input": {
+      "gap": 59.649,
+      "ego_speed": 6.394,
+      "lead_speed": 23.226,
+      "prev_acc": -2.977,
+      "desc": "Randomized State 8"
+    },
+    "py_cbf": {
+      "applied_acc": -2.827,
+      "u_nom": 2.0,
+      "u_cbf": 10.00905,
+      "u_raw": 2.0,
+      "u_sat": 2.0,
+      "h": 31.861,
+      "delta_v": 16.832,
+      "intervention": false,
+      "infeasible": false
+    },
+    "py_base": {
+      "applied_acc": -2.827,
+      "u_nom": 2.0
+    }
+  },
+  {
+    "input": {
+      "gap": 7.44,
+      "ego_speed": 33.467,
+      "lead_speed": 33.969,
+      "prev_acc": 0.85,
+      "desc": "Randomized State 9"
+    },
+    "py_cbf": {
+      "applied_acc": 0.7,
+      "u_nom": -4.0,
+      "u_cbf": -3.473699999999999,
+      "u_raw": -4.0,
+      "u_sat": -4.0,
+      "h": -74.494,
+      "delta_v": 0.5020000000000024,
+      "intervention": false,
+      "infeasible": false
+    },
+    "py_base": {
+      "applied_acc": 0.7,
+      "u_nom": -4.0
+    }
+  },
+  {
+    "input": {
+      "gap": 31.157,
+      "ego_speed": 7.93,
+      "lead_speed": 25.527,
+      "prev_acc": -1.359,
+      "desc": "Randomized State 10"
+    },
+    "py_cbf": {
+      "applied_acc": -1.209,
+      "u_nom": 2.0,
+      "u_cbf": 8.81335,
+      "u_raw": 2.0,
+      "u_sat": 2.0,
+      "h": 0.2970000000000006,
+      "delta_v": 17.597,
+      "intervention": false,
+      "infeasible": false
+    },
+    "py_base": {
+      "applied_acc": -1.209,
+      "u_nom": 2.0
+    }
+  },
+  {
+    "input": {
+      "gap": 13.082,
+      "ego_speed": 19.855,
+      "lead_speed": 6.032,
+      "prev_acc": 1.456,
+      "desc": "Randomized State 11"
+    },
+    "py_cbf": {
+      "applied_acc": 1.306,
+      "u_nom": -4.0,
+      "u_cbf": -8.9929,
+      "u_raw": -8.9929,
+      "u_sat": -4.0,
+      "h": -41.628,
+      "delta_v": -13.823,
+      "intervention": true,
+      "infeasible": true
+    },
+    "py_base": {
+      "applied_acc": 1.306,
+      "u_nom": -4.0
+    }
+  },
+  {
+    "input": {
+      "gap": 26.619,
+      "ego_speed": 24.876,
+      "lead_speed": 14.351,
+      "prev_acc": -0.88,
+      "desc": "Randomized State 12"
+    },
+    "py_cbf": {
+      "applied_acc": -1.03,
+      "u_nom": -4.0,
+      "u_cbf": -7.169150000000001,
+      "u_raw": -7.169150000000001,
+      "u_sat": -4.0,
+      "h": -38.13300000000001,
+      "delta_v": -10.525,
+      "intervention": true,
+      "infeasible": true
+    },
+    "py_base": {
+      "applied_acc": -1.03,
+      "u_nom": -4.0
+    }
+  },
+  {
+    "input": {
+      "gap": 55.124,
+      "ego_speed": 10.546,
+      "lead_speed": 34.088,
+      "prev_acc": 0.651,
+      "desc": "Randomized State 13"
+    },
+    "py_cbf": {
+      "applied_acc": 0.801,
+      "u_nom": 2.0,
+      "u_cbf": 12.722600000000002,
+      "u_raw": 2.0,
+      "u_sat": 2.0,
+      "h": 19.032000000000004,
+      "delta_v": 23.542,
+      "intervention": false,
+      "infeasible": false
+    },
+    "py_base": {
+      "applied_acc": 0.801,
+      "u_nom": 2.0
+    }
+  },
+  {
+    "input": {
+      "gap": 94.01,
+      "ego_speed": 31.845,
+      "lead_speed": 22.937,
+      "prev_acc": 1.531,
+      "desc": "Randomized State 14"
+    },
+    "py_cbf": {
+      "applied_acc": 1.3809999999999998,
+      "u_nom": 1.1221000000000032,
+      "u_cbf": -3.6879999999999984,
+      "u_raw": -3.6879999999999984,
+      "u_sat": -3.6879999999999984,
+      "h": 15.320000000000007,
+      "delta_v": -8.907999999999998,
+      "intervention": true,
+      "infeasible": false
+    },
+    "py_base": {
+      "applied_acc": 1.3809999999999998,
+      "u_nom": 1.1221000000000032
+    }
+  },
+  {
+    "input": {
+      "gap": 9.761,
+      "ego_speed": 10.879,
+      "lead_speed": 6.357,
+      "prev_acc": -2.048,
+      "desc": "Randomized State 15"
+    },
+    "py_cbf": {
+      "applied_acc": -2.198,
+      "u_nom": -4.0,
+      "u_cbf": -3.6108499999999997,
+      "u_raw": -4.0,
+      "u_sat": -4.0,
+      "h": -26.996999999999996,
+      "delta_v": -4.521999999999999,
+      "intervention": false,
+      "infeasible": false
+    },
+    "py_base": {
+      "applied_acc": -2.198,
+      "u_nom": -4.0
+    }
+  },
+  {
+    "input": {
+      "gap": 39.479,
+      "ego_speed": 13.14,
+      "lead_speed": 29.862,
+      "prev_acc": -1.859,
+      "desc": "Randomized State 16"
+    },
+    "py_cbf": {
+      "applied_acc": -1.709,
+      "u_nom": 2.0,
+      "u_cbf": 8.27095,
+      "u_raw": 2.0,
+      "u_sat": 2.0,
+      "h": -1.801000000000002,
+      "delta_v": 16.721999999999998,
+      "intervention": false,
+      "infeasible": false
+    },
+    "py_base": {
+      "applied_acc": -1.709,
+      "u_nom": 2.0
+    }
+  },
+  {
+    "input": {
+      "gap": 28.813,
+      "ego_speed": 21.281,
+      "lead_speed": 9.228,
+      "prev_acc": 0.813,
+      "desc": "Randomized State 17"
+    },
+    "py_cbf": {
+      "applied_acc": 0.6629999999999999,
+      "u_nom": -4.0,
+      "u_cbf": -7.46395,
+      "u_raw": -7.46395,
+      "u_sat": -4.0,
+      "h": -28.749,
+      "delta_v": -12.052999999999999,
+      "intervention": true,
+      "infeasible": true
+    },
+    "py_base": {
+      "applied_acc": 0.6629999999999999,
+      "u_nom": -4.0
+    }
+  },
+  {
+    "input": {
+      "gap": 8.381,
+      "ego_speed": 34.607,
+      "lead_speed": 28.167,
+      "prev_acc": -2.808,
+      "desc": "Randomized State 18"
+    },
+    "py_cbf": {
+      "applied_acc": -2.9579999999999997,
+      "u_nom": -4.0,
+      "u_cbf": -7.0116499999999995,
+      "u_raw": -7.0116499999999995,
+      "u_sat": -4.0,
+      "h": -75.833,
+      "delta_v": -6.439999999999998,
+      "intervention": true,
+      "infeasible": true
+    },
+    "py_base": {
+      "applied_acc": -2.9579999999999997,
+      "u_nom": -4.0
+    }
+  },
+  {
+    "input": {
+      "gap": 1.547,
+      "ego_speed": 29.464,
+      "lead_speed": 26.206,
+      "prev_acc": 0.374,
+      "desc": "Randomized State 19"
+    },
+    "py_cbf": {
+      "applied_acc": 0.22399999999999998,
+      "u_nom": -4.0,
+      "u_cbf": -5.248049999999999,
+      "u_raw": -5.248049999999999,
+      "u_sat": -4.0,
+      "h": -72.381,
+      "delta_v": -3.257999999999999,
+      "intervention": true,
+      "infeasible": true
+    },
+    "py_base": {
+      "applied_acc": 0.22399999999999998,
+      "u_nom": -4.0
+    }
+  },
+  {
+    "input": {
+      "gap": 77.356,
+      "ego_speed": 7.221,
+      "lead_speed": 15.754,
+      "prev_acc": -3.305,
+      "desc": "Randomized State 20"
+    },
+    "py_cbf": {
+      "applied_acc": -3.1550000000000002,
+      "u_nom": 2.0,
+      "u_cbf": 6.6621999999999995,
+      "u_raw": 2.0,
+      "u_sat": 2.0,
+      "h": 47.913999999999994,
+      "delta_v": 8.533,
+      "intervention": false,
+      "infeasible": false
+    },
+    "py_base": {
+      "applied_acc": -3.1550000000000002,
+      "u_nom": 2.0
+    }
+  },
+  {
+    "input": {
+      "gap": 86.447,
+      "ego_speed": 23.699,
+      "lead_speed": 14.927,
+      "prev_acc": -3.619,
+      "desc": "Randomized State 21"
+    },
+    "py_cbf": {
+      "applied_acc": -3.4690000000000003,
+      "u_nom": 2.0,
+      "u_cbf": -3.183550000000001,
+      "u_raw": -3.183550000000001,
+      "u_sat": -3.183550000000001,
+      "h": 24.049,
+      "delta_v": -8.772000000000002,
+      "intervention": true,
+      "infeasible": false
+    },
+    "py_base": {
+      "applied_acc": -3.4690000000000003,
+      "u_nom": 2.0
+    }
+  },
+  {
+    "input": {
+      "gap": 31.787,
+      "ego_speed": 14.755,
+      "lead_speed": 26.888,
+      "prev_acc": -0.175,
+      "desc": "Randomized State 22"
+    },
+    "py_cbf": {
+      "applied_acc": -0.024999999999999967,
+      "u_nom": 2.0,
+      "u_cbf": 5.43035,
+      "u_raw": 2.0,
+      "u_sat": 2.0,
+      "h": -12.723000000000006,
+      "delta_v": 12.133000000000001,
+      "intervention": false,
+      "infeasible": false
+    },
+    "py_base": {
+      "applied_acc": -0.024999999999999967,
+      "u_nom": 2.0
+    }
+  },
+  {
+    "input": {
+      "gap": 88.834,
+      "ego_speed": 19.166,
+      "lead_speed": 8.588,
+      "prev_acc": 0.279,
+      "desc": "Randomized State 23"
+    },
+    "py_cbf": {
+      "applied_acc": 0.129,
+      "u_nom": 2.0,
+      "u_cbf": -3.5139000000000005,
+      "u_raw": -3.5139000000000005,
+      "u_sat": -3.5139000000000005,
+      "h": 35.502,
+      "delta_v": -10.578000000000001,
+      "intervention": true,
+      "infeasible": false
+    },
+    "py_base": {
+      "applied_acc": 0.42900000000000005,
+      "u_nom": 2.0
+    }
+  },
+  {
+    "input": {
+      "gap": 76.318,
+      "ego_speed": 21.838,
+      "lead_speed": 28.129,
+      "prev_acc": -1.037,
+      "desc": "Randomized State 24"
+    },
+    "py_cbf": {
+      "applied_acc": -0.8869999999999999,
+      "u_nom": 2.0,
+      "u_cbf": 4.0276,
+      "u_raw": 2.0,
+      "u_sat": 2.0,
+      "h": 17.641999999999996,
+      "delta_v": 6.291,
+      "intervention": false,
+      "infeasible": false
+    },
+    "py_base": {
+      "applied_acc": -0.8869999999999999,
+      "u_nom": 2.0
+    }
+  },
+  {
+    "input": {
+      "gap": 52.751,
+      "ego_speed": 17.826,
+      "lead_speed": 5.763,
+      "prev_acc": -3.353,
+      "desc": "Randomized State 25"
+    },
+    "py_cbf": {
+      "applied_acc": -3.503,
+      "u_nom": -4.0,
+      "u_cbf": -5.926550000000001,
+      "u_raw": -5.926550000000001,
+      "u_sat": -4.0,
+      "h": 2.0989999999999966,
+      "delta_v": -12.063,
+      "intervention": true,
+      "infeasible": true
+    },
+    "py_base": {
+      "applied_acc": -3.503,
+      "u_nom": -4.0
+    }
+  },
+  {
+    "input": {
+      "gap": 4.111,
+      "ego_speed": 24.092,
+      "lead_speed": 14.431,
+      "prev_acc": -0.949,
+      "desc": "Randomized State 26"
+    },
+    "py_cbf": {
+      "applied_acc": -1.099,
+      "u_nom": -4.0,
+      "u_cbf": -7.78415,
+      "u_raw": -7.78415,
+      "u_sat": -4.0,
+      "h": -59.073,
+      "delta_v": -9.661,
+      "intervention": true,
+      "infeasible": true
+    },
+    "py_base": {
+      "applied_acc": -1.099,
+      "u_nom": -4.0
+    }
+  },
+  {
+    "input": {
+      "gap": 90.849,
+      "ego_speed": 12.479,
+      "lead_speed": 17.311,
+      "prev_acc": 0.533,
+      "desc": "Randomized State 27"
+    },
+    "py_cbf": {
+      "applied_acc": 0.683,
+      "u_nom": 2.0,
+      "u_cbf": 4.960550000000001,
+      "u_raw": 2.0,
+      "u_sat": 2.0,
+      "h": 50.891000000000005,
+      "delta_v": 4.832000000000001,
+      "intervention": false,
+      "infeasible": false
+    },
+    "py_base": {
+      "applied_acc": 0.683,
+      "u_nom": 2.0
+    }
+  },
+  {
+    "input": {
+      "gap": 23.651,
+      "ego_speed": 7.309,
+      "lead_speed": 13.693,
+      "prev_acc": -3.033,
+      "desc": "Randomized State 28"
+    },
+    "py_cbf": {
+      "applied_acc": -2.883,
+      "u_nom": 2.0,
+      "u_cbf": 2.8936499999999996,
+      "u_raw": 2.0,
+      "u_sat": 2.0,
+      "h": -5.967000000000002,
+      "delta_v": 6.3839999999999995,
+      "intervention": false,
+      "infeasible": false
+    },
+    "py_base": {
+      "applied_acc": -2.883,
+      "u_nom": 2.0
+    }
+  },
+  {
+    "input": {
+      "gap": 93.04,
+      "ego_speed": 29.244,
+      "lead_speed": 24.002,
+      "prev_acc": 1.229,
+      "desc": "Randomized State 29"
+    },
+    "py_cbf": {
+      "applied_acc": 1.0790000000000002,
+      "u_nom": 2.0,
+      "u_cbf": -1.6434000000000002,
+      "u_raw": -1.6434000000000002,
+      "u_sat": -1.6434000000000002,
+      "h": 19.552000000000007,
+      "delta_v": -5.242000000000001,
+      "intervention": true,
+      "infeasible": false
+    },
+    "py_base": {
+      "applied_acc": 1.379,
+      "u_nom": 2.0
+    }
+  },
+  {
+    "input": {
+      "gap": 80.564,
+      "ego_speed": 10.597,
+      "lead_speed": 31.777,
+      "prev_acc": -0.764,
+      "desc": "Randomized State 30"
+    },
+    "py_cbf": {
+      "applied_acc": -0.614,
+      "u_nom": 2.0,
+      "u_cbf": 12.808499999999999,
+      "u_raw": 2.0,
+      "u_sat": 2.0,
+      "h": 44.36999999999999,
+      "delta_v": 21.18,
+      "intervention": false,
+      "infeasible": false
+    },
+    "py_base": {
+      "applied_acc": -0.614,
+      "u_nom": 2.0
+    }
+  },
+  {
+    "input": {
+      "gap": 80.937,
+      "ego_speed": 31.883,
+      "lead_speed": 14.54,
+      "prev_acc": -3.34,
+      "desc": "Randomized State 31"
+    },
+    "py_cbf": {
+      "applied_acc": -3.4899999999999998,
+      "u_nom": -4.0,
+      "u_cbf": -8.562949999999999,
+      "u_raw": -8.562949999999999,
+      "u_sat": -4.0,
+      "h": 2.1710000000000065,
+      "delta_v": -17.343,
+      "intervention": true,
+      "infeasible": true
+    },
+    "py_base": {
+      "applied_acc": -3.4899999999999998,
+      "u_nom": -4.0
+    }
+  },
+  {
+    "input": {
+      "gap": 23.566,
+      "ego_speed": 17.813,
+      "lead_speed": 29.54,
+      "prev_acc": 1.164,
+      "desc": "Randomized State 32"
+    },
+    "py_cbf": {
+      "applied_acc": 1.314,
+      "u_nom": 2.0,
+      "u_cbf": 4.5105,
+      "u_raw": 2.0,
+      "u_sat": 2.0,
+      "h": -27.06,
+      "delta_v": 11.727,
+      "intervention": false,
+      "infeasible": false
+    },
+    "py_base": {
+      "applied_acc": 1.314,
+      "u_nom": 2.0
+    }
+  },
+  {
+    "input": {
+      "gap": 1.688,
+      "ego_speed": 20.322,
+      "lead_speed": 17.522,
+      "prev_acc": -2.667,
+      "desc": "Randomized State 33"
+    },
+    "py_cbf": {
+      "applied_acc": -2.8169999999999997,
+      "u_nom": -4.0,
+      "u_cbf": -4.0978,
+      "u_raw": -4.0978,
+      "u_sat": -4.0,
+      "h": -53.955999999999996,
+      "delta_v": -2.8000000000000007,
+      "intervention": true,
+      "infeasible": true
+    },
+    "py_base": {
+      "applied_acc": -2.8169999999999997,
+      "u_nom": -4.0
+    }
+  },
+  {
+    "input": {
+      "gap": 12.867,
+      "ego_speed": 15.128,
+      "lead_speed": 33.287,
+      "prev_acc": -2.061,
+      "desc": "Randomized State 34"
+    },
+    "py_cbf": {
+      "applied_acc": -1.911,
+      "u_nom": 2.0,
+      "u_cbf": 7.46005,
+      "u_raw": 2.0,
+      "u_sat": 2.0,
+      "h": -32.388999999999996,
+      "delta_v": 18.159,
+      "intervention": false,
+      "infeasible": false
+    },
+    "py_base": {
+      "applied_acc": -1.911,
+      "u_nom": 2.0
+    }
+  },
+  {
+    "input": {
+      "gap": 52.36,
+      "ego_speed": 26.091,
+      "lead_speed": 15.909,
+      "prev_acc": 1.831,
+      "desc": "Randomized State 35"
+    },
+    "py_cbf": {
+      "applied_acc": 1.681,
+      "u_nom": -4.0,
+      "u_cbf": -5.8321000000000005,
+      "u_raw": -5.8321000000000005,
+      "u_sat": -4.0,
+      "h": -14.822000000000003,
+      "delta_v": -10.182,
+      "intervention": true,
+      "infeasible": true
+    },
+    "py_base": {
+      "applied_acc": 1.681,
+      "u_nom": -4.0
+    }
+  },
+  {
+    "input": {
+      "gap": 96.282,
+      "ego_speed": 12.553,
+      "lead_speed": 19.917,
+      "prev_acc": -2.195,
+      "desc": "Randomized State 36"
+    },
+    "py_cbf": {
+      "applied_acc": -2.045,
+      "u_nom": 2.0,
+      "u_cbf": 6.4908,
+      "u_raw": 2.0,
+      "u_sat": 2.0,
+      "h": 56.175999999999995,
+      "delta_v": 7.364000000000001,
+      "intervention": false,
+      "infeasible": false
+    },
+    "py_base": {
+      "applied_acc": -2.045,
+      "u_nom": 2.0
+    }
+  },
+  {
+    "input": {
+      "gap": 29.199,
+      "ego_speed": 6.107,
+      "lead_speed": 23.287,
+      "prev_acc": -0.984,
+      "desc": "Randomized State 37"
+    },
+    "py_cbf": {
+      "applied_acc": -0.834,
+      "u_nom": 2.0,
+      "u_cbf": 8.68925,
+      "u_raw": 2.0,
+      "u_sat": 2.0,
+      "h": 1.985000000000003,
+      "delta_v": 17.18,
+      "intervention": false,
+      "infeasible": false
+    },
+    "py_base": {
+      "applied_acc": -0.834,
+      "u_nom": 2.0
+    }
+  },
+  {
+    "input": {
+      "gap": 6.096,
+      "ego_speed": 13.359,
+      "lead_speed": 32.248,
+      "prev_acc": -2.563,
+      "desc": "Randomized State 38"
+    },
+    "py_cbf": {
+      "applied_acc": -2.4130000000000003,
+      "u_nom": 2.0,
+      "u_cbf": 7.6633999999999975,
+      "u_raw": 2.0,
+      "u_sat": 2.0,
+      "h": -35.622,
+      "delta_v": 18.888999999999996,
+      "intervention": false,
+      "infeasible": false
+    },
+    "py_base": {
+      "applied_acc": -2.4130000000000003,
+      "u_nom": 2.0
+    }
+  },
+  {
+    "input": {
+      "gap": 15.345,
+      "ego_speed": 19.684,
+      "lead_speed": 34.57,
+      "prev_acc": -2.548,
+      "desc": "Randomized State 39"
+    },
+    "py_cbf": {
+      "applied_acc": -2.398,
+      "u_nom": 2.0,
+      "u_cbf": 5.4918499999999995,
+      "u_raw": 2.0,
+      "u_sat": 2.0,
+      "h": -39.023,
+      "delta_v": 14.886,
+      "intervention": false,
+      "infeasible": false
+    },
+    "py_base": {
+      "applied_acc": -2.398,
+      "u_nom": 2.0
+    }
+  },
+  {
+    "input": {
+      "gap": 67.541,
+      "ego_speed": 27.849,
+      "lead_speed": 12.129,
+      "prev_acc": 0.369,
+      "desc": "Randomized State 40"
+    },
+    "py_cbf": {
+      "applied_acc": 0.21899999999999997,
+      "u_nom": -4.0,
+      "u_cbf": -8.017850000000001,
+      "u_raw": -8.017850000000001,
+      "u_sat": -4.0,
+      "h": -3.1570000000000107,
+      "delta_v": -15.72,
+      "intervention": true,
+      "infeasible": true
+    },
+    "py_base": {
+      "applied_acc": 0.21899999999999997,
+      "u_nom": -4.0
+    }
+  }
+]
